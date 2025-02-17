@@ -14,10 +14,10 @@ Sensors.OnLightDrop(function () {
 
 })
 
-radio.onReceivedNumber(function (přijatéČíslo: number) {
+radio.onReceivedNumber(function (receivedNumber: number) {
     music.playTone(Note.C, 500)
-    basic.showNumber(přijatéČíslo)
-    dobaBěhu = přijatéČíslo
+    basic.showNumber(receivedNumber)
+    dobaBěhu = receivedNumber
 })
 
 input.onButtonPressed(Button.A, function () {
